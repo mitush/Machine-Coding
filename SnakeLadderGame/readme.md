@@ -1,4 +1,4 @@
-#Problem Statement:
+# Problem Statement:
 Create a snake and ladder application. The application should take as input (from the command line or a file):
 
 - Number of snakes (s) followed by s lines each containing 2 numbers denoting the head and tail positions of the snake.
@@ -12,7 +12,7 @@ Format: `<player_name>` rolled a `<dice_value>` and moved from `<initial_positio
 When someone wins the game, print that the player won the game.
 Format: `<player_name>` wins the game
 
-#Rules of the game
+# Rules of the game
 - The board will have 100 cells numbered from 1 to 100.
 - The game will have a six sided dice numbered from 1 to 6 and will always give a random number on rolling it.
 - Each player has a piece which is initially kept outside the board (i.e., at position 0).
@@ -35,76 +35,148 @@ Format: `<player_name>` wins the game
 - It is possible to reach 100, i.e., it is possible to win the game.
 - Snakes and Ladders do not form an infinite loop.
 
-#Input
+# Input
 The `input.txt` file can be used to give the input for this question.
+- Number of snakes (s) followed by s lines each containing 2 numbers denoting the head and tail positions of the snake.
+- Number of ladders (l) followed by l lines each containing 2 numbers denoting the start and end positions of the ladder.
+- Number of players (p) followed by p lines each containing a name.
 
 9
+
 62 5
+
 33 6
+
 49 9
+
 88 16
+
 41 20
+
 56 53
+
 98 64
+
 93 73
+
 95 75
+
 8
+
 2 37
+
 27 46
+
 10 32
+
 51 68
+
 61 79
+
 65 84
+
 71 91
+
 81 100
+
 2
+
 Player1
+
 Player2
 
-#Output
+
+# Output
+`<player_name>` rolled a `<dice_value>` and moved from `<initial_position>` to `<final_position>`
+
 Player1 rolled a 4 and Player1 has moved from 0 to 4
+
 Player2 rolled a 2 and Player2 has moved from 0 to 37
+
 Player1 rolled a 5 and Player1 has moved from 4 to 9
+
 Player2 rolled a 2 and Player2 has moved from 37 to 39
+
 Player1 rolled a 3 and Player1 has moved from 9 to 12
+
 Player2 rolled a 4 and Player2 has moved from 39 to 43
+
 Player1 rolled a 4 and Player1 has moved from 12 to 16
+
 Player2 rolled a 4 and Player2 has moved from 43 to 47
+
 Player1 rolled a 5 and Player1 has moved from 16 to 21
+
 Player2 rolled a 2 and Player2 has moved from 47 to 9
+
 Player1 rolled a 2 and Player1 has moved from 21 to 23
+
 Player2 rolled a 6 and Player2 rolled a 5 and Player2 has moved from 9 to 20
+
 Player1 rolled a 6 and Player1 rolled a 4 and Player1 has moved from 23 to 6
+
 Player2 rolled a 6 and Player2 rolled a 3 and Player2 has moved from 20 to 29
+
 Player1 rolled a 4 and Player1 has moved from 6 to 32
+
 Player2 rolled a 3 and Player2 has moved from 29 to 32
+
 Player1 rolled a 1 and Player1 has moved from 32 to 6
+
 Player2 rolled a 4 and Player2 has moved from 32 to 36
+
 Player1 rolled a 2 and Player1 has moved from 6 to 8
+
 Player2 rolled a 5 and Player2 has moved from 36 to 20
+
 Player1 rolled a 3 and Player1 has moved from 8 to 11
+
 Player2 rolled a 5 and Player2 has moved from 20 to 25
+
 Player1 rolled a 4 and Player1 has moved from 11 to 15
+
 Player2 rolled a 4 and Player2 has moved from 25 to 29
+
 Player1 rolled a 5 and Player1 has moved from 15 to 20
+
 Player2 rolled a 3 and Player2 has moved from 29 to 32
+
 Player1 rolled a 6 and Player1 rolled a 6 and Player1 rolled a 5 and Player1 has moved from 20 to 37
+
 Player2 rolled a 2 and Player2 has moved from 32 to 34
+
 Player1 rolled a 5 and Player1 has moved from 37 to 42
+
 Player2 rolled a 5 and Player2 has moved from 34 to 39
+
 Player1 rolled a 4 and Player1 has moved from 42 to 46
+
 Player2 rolled a 1 and Player2 has moved from 39 to 40
+
 Player1 rolled a 2 and Player1 has moved from 46 to 48
+
 Player2 rolled a 3 and Player2 has moved from 40 to 43
+
 Player1 rolled a 4 and Player1 has moved from 48 to 52
+
 Player2 rolled a 2 and Player2 has moved from 43 to 45
+
 Player1 rolled a 5 and Player1 has moved from 52 to 57
+
 Player2 rolled a 5 and Player2 has moved from 45 to 50
+
 Player1 rolled a 6 and Player1 rolled a 2 and Player1 has moved from 57 to 84
+
 Player2 rolled a 2 and Player2 has moved from 50 to 52
+
 Player1 rolled a 5 and Player1 has moved from 84 to 89
+
 Player2 rolled a 2 and Player2 has moved from 52 to 54
+
 Player1 rolled a 6 and Player1 rolled a 4 and Player1 has moved from 89 to 99
+
 Player2 rolled a 2 and Player2 has moved from 54 to 53
+
 Player1 rolled a 1 and Player1 has moved from 99 to 100
+
 Player1 has won the game!
